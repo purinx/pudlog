@@ -11,12 +11,17 @@ export function Header(): ReactElement {
       position="fixed"
       display="flex"
       justifyContent="space-between"
-      bgColor="rgba(0,0,0,0.1)"
-      height="52px"
+      bgColor="rgba(0,0,0,0.05)"
+      height="4em"
       color="#fff"
       width="100%"
-      paddingX="20px">
-      <chakra.div className="Header-right">
+      paddingX="20px"
+    >
+      <chakra.div
+        className="Header-right"
+        alignItems="center"
+        display="flex"
+      >
         <Title>Pudlog</Title>
       </chakra.div>
       <chakra.div
@@ -24,7 +29,8 @@ export function Header(): ReactElement {
         display="flex"
         alignItems="center"
         width="280px"
-        justifyContent="space-evenly">
+        justifyContent="space-evenly"
+      >
         <RoundedButton onClick={() => {}}>
           <Strong>Menu1</Strong>
         </RoundedButton>
