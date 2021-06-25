@@ -4,6 +4,8 @@ import { chakra } from '@chakra-ui/react';
 
 import { Header } from '../components/atoms/Header';
 import { COLORS } from '../styles/constants';
+import { PageContainer } from '../components/atoms/PageContainer';
+import { Profile } from '../components/presenters/Profile';
 
 export default function Index(): ReactElement {
   return (
@@ -12,6 +14,9 @@ export default function Index(): ReactElement {
         <title>Pudlog</title>
       </Head>
       <Header />
+      <PageContainer>
+        <Profile />
+      </PageContainer>
     </chakra.div>
   );
 }

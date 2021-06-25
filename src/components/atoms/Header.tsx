@@ -1,19 +1,19 @@
 import React, { ReactElement } from 'react';
-
 import { chakra } from '@chakra-ui/react';
-import { Strong, Title } from './typography';
+
+import { COLORS } from '../../styles/constants';
 import { RoundedButton } from './RoundedButton';
+import { Strong, Title } from './typography';
 
 export function Header(): ReactElement {
   return (
     <chakra.div
       className="Header"
-      position="fixed"
       display="flex"
       justifyContent="space-between"
       bgColor="rgba(0,0,0,0.05)"
       height="4em"
-      color="#fff"
+      color={COLORS.white}
       width="100%"
       paddingX="20px"
     >

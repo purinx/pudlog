@@ -1,6 +1,6 @@
 import { chakra } from '@chakra-ui/system';
 import React, { ReactElement, ReactNode } from 'react';
-import { SHADOW_HOVER } from '../../styles/constants';
+import { COLORS, SHADOW_HOVER } from '../../styles/constants';
 
 type Props = {
   children: ReactNode;
@@ -19,11 +19,11 @@ export function RoundedButton({
     <chakra.button
       bgColor={bgColor}
       height={`${height}px`}
-      border="2px solid #fff"
+      border={`2px solid ${COLORS.white}`}
       borderRadius={`${height / 2}px`}
       onClick={onClick}
       minWidth="100px"
-      color="#fff"
+      color={COLORS.white}
       marginX="8px"
       _hover={{
         boxShadow: SHADOW_HOVER,
