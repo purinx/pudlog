@@ -9,7 +9,7 @@ import { Profile } from '../components/presenters/Profile';
 
 export default function Index(): ReactElement {
   return (
-    <chakra.div height="100vw" bgColor={COLORS.yellow}>
+    <chakra.div height="100vw" bgColor={COLORS.green}>
       <Head>
         <title>Pudlog</title>
       </Head>

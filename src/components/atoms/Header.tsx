@@ -11,7 +11,7 @@ export function Header(): ReactElement {
       className="Header"
       display="flex"
       justifyContent="space-between"
-      bgColor="rgba(0,0,0,0.05)"
+      bgColor={COLORS.card}
       height="4em"
       color={COLORS.white}
       width="100%"
